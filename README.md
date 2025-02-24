@@ -43,6 +43,8 @@ Para que você  utilize o projeto corretamente,é preciso  configurar o próprio
 ✅ Melhor estabilidade e precisão dos dados graças à integração com API.
 ✅ Sistema de alertas no Telegram, avisando sobre variações bruscas no mercado.
 
+
+![image](https://github.com/user-attachments/assets/3022dd7e-c727-4773-8d46-c6ac7d90849c)
 ![image](https://github.com/user-attachments/assets/443eba16-3d73-407a-9506-a7ba3711dde5)
 ![image](https://github.com/user-attachments/assets/957002b8-4c97-45d4-b2bf-ab5d9aba6a0c)
 ![image](https://github.com/user-attachments/assets/cada3d1d-321f-4bbe-a7c7-be8af7fdbc2e)
