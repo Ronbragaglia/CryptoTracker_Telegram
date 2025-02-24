@@ -140,8 +140,8 @@ df.to_excel("dados_criptomoedas.xlsx", index=False)
 driver.quit()
 
 
-TELEGRAM_BOT_TOKEN = "7829948842:AAFeDBKV-9wBiLU4I1Fk-hb7idsONE760do"
-TELEGRAM_CHAT_ID = "5638250296"
+TELEGRAM_BOT_TOKEN = ""
+TELEGRAM_CHAT_ID = ""
 
 def enviar_telegram(mensagem, imagem=None):
     url_mensagem = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
