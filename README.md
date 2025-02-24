@@ -1,10 +1,22 @@
-🔹 📊 O que esse código faz?
-O CryptoMonitor Bot é um sistema automatizado de monitoramento de criptomoedas que coleta dados de Market Cap das principais moedas em tempo real e os envia para um bot do Telegram. Ele também: ✅ Armazena os dados em um banco de dados SQLite.
-✅ Gera gráficos do histórico de Market Cap.
-✅ Cria alertas automáticos para variações bruscas de preços.
-✅ Roda automaticamente a cada X horas, sem necessidade de intervenção manual.
+# 🚀 CryptoTracker_Telegram 📊
+ Monitoramento Automático de Criptomoedas com Alertas no Telegram
+![Crypto Monitor Bot](https://i.imgur.com/link-da-imagem.jpg)
 
-OBSERVAÇÃO!!!
+🔹 📊 O que esse código faz?
+É um sistema automatizado que monitora criptomoedas em tempo real e envia atualizações diretamente para o Telegram!  
+
+Ele também:  
+✅ **Armazena dados** de Market Cap em um banco de dados SQLite.  
+✅ **Gera gráficos automáticos** de histórico de preços.  
+✅ **Cria alertas automáticos** para variações bruscas.  
+✅ **Executa automaticamente** a cada X horas.
+
+⚠️ **IMPORTANTE! CONFIGURE SEU TELEGRAM BOT**
+Para usar este projeto, você **precisa criar seu próprio bot do Telegram** e obter as credenciais.  
+🔹 **Siga este guia:** [Configurar Telegram Bot](#configurar-telegram-bot)
+
+
+
 Para que você  utilize o projeto corretamente,é preciso  configurar o próprio bot do Telegram e adicionar as credenciais dela.
 
 ![image](https://github.com/user-attachments/assets/d38dd1be-e8c0-47ff-88ed-e1f89a1964bb)
@@ -39,7 +51,10 @@ Para que você  utilize o projeto corretamente,é preciso  configurar o próprio
 ![image](https://github.com/user-attachments/assets/78cea64a-58ee-4dfa-ab78-a841bd43b98b)
 ![image](https://github.com/user-attachments/assets/11061cae-dc3c-4236-92bd-54d296138260)
 
-
+📩 Contato
+📧 Email:rone.bragaglia@uni9.edu.br
+🔗 LinkedIn: linkedin.com/in//rone-bragaglia-a6aa60157
+💻 GitHub: github.com/Ronbragaglia
 
 
 
@@ -48,3 +63,5 @@ Para que você  utilize o projeto corretamente,é preciso  configurar o próprio
 🔜 Integração com outras APIs de criptomoedas para aumentar a precisão dos dados.
 🔜 Melhoria nos alertas do Telegram, permitindo configuração personalizada.
 🔜 Deploy na Nuvem (Heroku, AWS Lambda ou outra solução) para manter o bot rodando 24/7
+
+📢 Se gostou do projeto, deixe uma ⭐ no repositório!
