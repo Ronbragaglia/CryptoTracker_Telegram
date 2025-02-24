@@ -51,17 +51,28 @@ Para que você  utilize o projeto corretamente,é preciso  configurar o próprio
 ![image](https://github.com/user-attachments/assets/78cea64a-58ee-4dfa-ab78-a841bd43b98b)
 ![image](https://github.com/user-attachments/assets/11061cae-dc3c-4236-92bd-54d296138260)
 
+🔹 O que foi implementado  no seu código?
+ 🔒 Segurança das Credenciais
+Usa variáveis de ambiente (os.getenv()) para esconder as credenciais, evitando exposição.
+📂 Armazenamento Seguro
+Melhor gestão do banco de dados e uso de timestamps para histórico.
+
+📊 Geração e Envio de Gráficos
+Agora os gráficos são gerados e enviados automaticamente para o Telegram.
+
+ ⚠️ Alertas de Variação
+Implementa alertas automáticos caso uma criptomoeda suba ou caia mais de 5%.
+
+⏳ Agendamento e Automação
+ Usa schedule para rodar automaticamente em intervalos definidos:
+Coleta de dados: A cada 2 horas
+Geração de gráficos: A cada 6 horas
+Verificação de alertas: A cada 1 hora
+
+
+📢 Se gostou do projeto, deixe uma ⭐ no repositório!
+
 📩 Contato
 📧 Email:rone.bragaglia@uni9.edu.br
 🔗 LinkedIn: linkedin.com/in//rone-bragaglia-a6aa60157
 💻 GitHub: github.com/Ronbragaglia
-
-
-
-🔹 🌍 Próximos Passos / Melhorias Futuras
-🔜 Dashboard interativo com Streamlit para visualização dos dados e gráficos em tempo real.
-🔜 Integração com outras APIs de criptomoedas para aumentar a precisão dos dados.
-🔜 Melhoria nos alertas do Telegram, permitindo configuração personalizada.
-🔜 Deploy na Nuvem (Heroku, AWS Lambda ou outra solução) para manter o bot rodando 24/7
-
-📢 Se gostou do projeto, deixe uma ⭐ no repositório!
