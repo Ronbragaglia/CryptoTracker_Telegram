@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  crypto-tracker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: crypto-tracker
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./.env:/app/.env:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+      - LOG_LEVEL=INFO
+    restart: unless-stopped
+    networks:
+      - crypto-tracker-network
+
+  # Optional: PostgreSQL for storing crypto data
+  postgres:
+    image: postgres:15-alpine
+    container_name: crypto-tracker-db
+    environment:
+      POSTGRES_USER: cryptotracker
+      POSTGRES_PASSWORD: cryptotracker_password
+      POSTGRES_DB: cryptotracker
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    restart: unless-stopped
+    networks:
+      - crypto-tracker-network
+
+  # Optional: Redis for caching
+  redis:
+    image: redis:7-alpine
+    container_name: crypto-tracker-redis
+    ports:
+      - "6380:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    networks:
+      - crypto-tracker-network
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  crypto-tracker-network:
+    driver: bridge
